@@ -21,6 +21,10 @@ body {
     padding: 12px;
 }
   
+main {
+    position: relative;
+}
+
 img {
     display: block;
 }
@@ -144,4 +148,48 @@ img {
     align-items: center;
     list-style: none;
     gap: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .article-card {
+        max-width: 730px;
+        display: flex;
+    }
+
+    .article-card__img {
+        width: 285px;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .article-card__content {
+        padding: 3.2rem 4rem;
+        position: initial;
+    }
+
+    .article-card__author {
+        position: initial;
+    }
+
+    /* Share container */
+    .share-container {
+        /* display: flex; */
+        align-self: flex-end;
+        width: fit-content;
+        left: 55rem;
+        bottom: 8.5rem;
+        padding: 1.6rem 3.6rem;
+        border-radius: 0.8rem;
+    }
+
+    .share-container::after {
+        content: "";
+        position: absolute;
+        width: 1.7rem;
+        height: 1.7rem;
+        left: 50%;
+        bottom: -0.9rem;
+        transform: translate(-50%, 0) rotate(45deg);
+        background: var(--very-dark-grayish-blue);
+    }
 }

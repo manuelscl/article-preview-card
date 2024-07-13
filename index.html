@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover simple tips to enhance your home decor and add a personal touch to your furniture with the Article Preview Component.">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <!-- Font: Manrope -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +17,49 @@
   <title>Frontend Mentor | Article preview component</title>
 </head>
 <body>
+  <main>
+    <div class="article-card">
+      <img class="article-card__img" src="./images/drawers.jpg" alt="Article background">
+      <div class="article-card__content">
+        <h2 class="article-card__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+        <p class="article-card__description">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+        <div class="article-card__author">
+          <figure class="author__figure">
+            <img class="author__img" src="./images/avatar-michelle.jpg" alt="Author Photo Michelle">
+            <figcaption class="author__details">
+              <p class="author__name">Michelle Appleton</p>
+              <span class="author__date">28 Jun 2020</span>
+            </figcaption>
+          </figure>
+          <button class="btn-share">
+            <img class="btn-share__icon" src="./images/icon-share.svg" alt="Share">
+          </button>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
+          <div class="share-container active">
+            <h2 class="share-container__text">Share</h2>
+            <ul class="share-container__list">
+              <li class="share-container__list-item">
+                <a class="share-container__link" href="#">
+                  <img class="share-container__icon" src="./images/icon-facebook.svg" alt="Facebook">
+                </a>
+              </li>
+              <li class="share-container__list-item">
+                <a class="share-container__link" href="#">
+                  <img class="share-container__icon" src="./images/icon-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+              <li class="share-container__list-item">
+                <a class="share-container__link" href="#">
+                  <img class="share-container__icon" src="./images/icon-pinterest.svg" alt="Pinterest">
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>  
+      </div>
+    </div>
+  </main>
 </body>
 </html>

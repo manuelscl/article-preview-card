@@ -129,7 +129,13 @@ img {
     background: var(--very-dark-grayish-blue);
     padding: 2.6rem 3rem;
     gap: 1.6rem;
-    transition: 160ms ease-in-out;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.share-container.active {
+    display: flex;
+    opacity: 1;
 }
   
 .share-container.active .btn-share:hover {
@@ -172,8 +178,7 @@ img {
     }
 
     /* Share container */
-    .share-container {
-        /* display: flex; */
+    .share-container.active {
         align-self: flex-end;
         width: fit-content;
         left: 55rem;
@@ -182,7 +187,7 @@ img {
         border-radius: 0.8rem;
     }
 
-    .share-container::after {
+    .share-container.active::after {
         content: "";
         position: absolute;
         width: 1.7rem;

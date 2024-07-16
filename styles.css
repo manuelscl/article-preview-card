@@ -193,7 +193,7 @@ img {
         width: 1.7rem;
         height: 1.7rem;
         left: 50%;
-        bottom: -0.9rem;
+        bottom: -0.8rem;
         transform: translate(-50%, 0) rotate(45deg);
         background: var(--very-dark-grayish-blue);
     }
